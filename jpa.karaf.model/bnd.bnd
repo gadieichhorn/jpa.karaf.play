@@ -1,1 +1,10 @@
+Meta-Persistence: \
+    META-INF/persistence.xml
 
+Import-Package: \
+    !org.osgi.annotation.versioning, \
+    !org.osgi.service.component.annotations, \
+    *
+
+Export-Packages: \
+    com.rds.jpa.karaf.model.*

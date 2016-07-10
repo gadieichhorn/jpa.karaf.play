@@ -1,0 +1,9 @@
+build 
+mvn clean install
+
+install 
+feature:repo-add mvn:com.rds/jpa.karaf.deploy/1.0-SNAPSHOT/xml/features
+feature:install sample-karaf-jpa-all
+
+
+
