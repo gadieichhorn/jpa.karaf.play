@@ -1,2 +1,12 @@
-/jpa.karaf.deploy/target/
-/jpa.karaf.persistence/target/
+.idea
+*.iml
+*.zip
+*.log
+*.jar
+*.meta
+.project
+.settings
+nb-configuration.xml
+deploy-pom.xml
+target
+tmp
