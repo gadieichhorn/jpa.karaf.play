@@ -5,10 +5,14 @@
     <repository>mvn:org.ops4j.pax.jdbc/pax-jdbc-features/0.8.0/xml/features</repository>
 
     <feature name="sample-karaf-jpa-all" version="${pom.version}">
+        <!--framework-->
+        <feature>scr</feature>
+        <!--project-->
         <feature>sample-karaf-jpa-persistence</feature>
     </feature>
     
     <feature name="sample-karaf-jpa-persistence" version="${pom.version}">
+        <!--framework-->
         <feature>pax-jdbc-h2</feature>
         <feature>pax-jdbc-config</feature>
         <feature>pax-jdbc-pool-dbcp2</feature>
@@ -16,30 +20,10 @@
         <feature>transaction</feature>
         <feature version="[2.2, 3)">jpa</feature>
         <feature version="[2.6, 2.7)">eclipselink</feature>      
-<!--          <bundle>mvn:${groupId}/model/${pom.version}</bundle>
-        <bundle>mvn:${groupId}/persistence/${pom.version}</bundle>-->
-  
+
+          <!--project-->  
         <bundle>mvn:${groupId}/jpa.karaf.model/${pom.version}</bundle>
- 
+        <bundle>mvn:${groupId}/jpa.karaf.persistence/${pom.version}</bundle> 
     </feature>
-
-<!--    <feature name="example-tasklist-cdi-service" version="${pom.version}">
-        <feature>cxf-features-logging</feature>
-        <feature>cxf-jaxrs</feature>
-        <feature>cxf-commands</feature>
-        <bundle>mvn:${groupId}/service/${pom.version}</bundle>
-    </feature>
-
-    <feature name="example-tasklist-cdi-ui" version="${pom.version}">
-        <feature>war</feature>
-        <bundle>mvn:${groupId}/angular-ui/${pom.version}</bundle>
-    </feature>
-    
-    <feature name="example-tasklist-cdi-ui-old" version="${pom.version}">
-        <feature>http</feature>
-        <feature>http-whiteboard</feature>
-        <bundle>mvn:${groupId}/model/${pom.version}</bundle>
-        <bundle>mvn:${groupId}/ui/${pom.version}</bundle>
-    </feature>-->
    
 </features>

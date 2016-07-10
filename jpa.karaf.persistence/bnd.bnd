@@ -1,0 +1,6 @@
+Import-Package: \
+    !org.osgi.annotation.versioning, \
+    !org.osgi.service.component.annotations, \
+    *
+
+Export-Packages: \

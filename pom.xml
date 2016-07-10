@@ -13,6 +13,7 @@
     <modules>
         <module>jpa.karaf.model</module>
         <module>jpa.karaf.deploy</module>
+        <module>jpa.karaf.persistence</module>
     </modules>
 
     <properties>
@@ -87,14 +88,14 @@
                 <version>6.0.0</version>                
             </dependency>
             <dependency>
-                <groupId>javax.persistence</groupId>
-                <artifactId>persistence-api</artifactId>
-                <version>1.0.2</version>
-            </dependency>
-            <dependency>
                 <groupId>org.eclipse.persistence</groupId>
                 <artifactId>org.eclipse.persistence.jpa</artifactId>
                 <version>2.6.3</version>
+            </dependency>
+            <dependency>
+                <groupId>org.eclipse.persistence</groupId>
+                <artifactId>javax.persistence</artifactId>
+                <version>2.1.1</version>
             </dependency>
             <dependency>
                 <groupId>org.eclipse.persistence</groupId>
@@ -111,6 +112,13 @@
                 <artifactId>org.eclipse.persistence.jpa.modelgen.processor</artifactId>
                 <version>2.6.3</version>
             </dependency>
+
+            <dependency>
+                <groupId>org.slf4j</groupId>
+                <artifactId>slf4j-api</artifactId>
+                <version>1.7.21</version>
+            </dependency>
+
         </dependencies>
     </dependencyManagement>
 
